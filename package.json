@@ -4,11 +4,12 @@
   "description": "A bare-bones 11ty starter kit",
   "main": "index.js",
   "scripts": {
-    "build": "npx npm-run-all -s clean eleventy sass",
+    "build": "npx npm-run-all -s clean eleventy sass:build",
     "clean": "npx rimraf _site",
     "eleventy": "npx eleventy",
     "eleventy:serve": "npx eleventy --serve",
     "sass": "npx sass src/sass:_site/css",
+    "sass:build": "npx sass --style=compressed src/sass:_site/css",
     "sass:watch": "npx sass --watch src/sass:_site/css",
     "start": "npx npm-run-all -p eleventy:serve sass:watch"
   },
