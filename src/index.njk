@@ -1,9 +1,11 @@
 ---
 title: Hey-oooooooo!
+date: 2020-03-06
 ---
 {% extends "layouts/base.njk" %}
 
 {% block content %}
+  <time>{{ date | dateFormatted }}</time>
   <h1>{{ site.title }}</h1>
   <p>Let's get going...</p>
 {% endblock %}
