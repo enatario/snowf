@@ -1,0 +1,21 @@
+:root {
+  --color-dark-blue: #334259;
+  --color-beige: #f8f6f0;
+  --color-poppy: #eb5757;
+  --color-poppy-dark: #c74040;
+  --color-white: #ffffff;
+
+  --color-background: var(--color-beige);
+  --color-text: var(--color-dark-blue);
+  --color-link: var(--color-poppy);
+  --color-link-hover: var(--color-poppy-dark);
+
+  --font-body: "Neuton", serif;
+
+  --line-height-base: 1.3;
+
+  --font-size-smaller: 1rem;
+  --font-size-small: 1.2rem;
+  --font-size-base: 1.5rem;
+  --font-size-large: 2.2rem;
+}

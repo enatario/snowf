@@ -1,0 +1,32 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+a {
+  color: var(--color-link);
+
+  &:hover {
+    color: var(--color-link-hover);
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-size-small);
+}
+
+[role="doc-subtitle"] {
+  font-size: var(--font-size-large);
+  margin-top: 0;
+}

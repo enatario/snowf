@@ -11,13 +11,14 @@
     "eleventy": "npx eleventy",
     "serve": "npx @11ty/eleventy --serve",
     "sass": "npx sass --no-source-map src/css:dist",
-    "sass:build": "npx sass  --no-source-map --style=compressed src/css:dist",
-    "sass:watch": "npx sass --no-source-map --watch src/css:dist",
+    "sass:build": "npx sass  --no-source-map --load-path=node_modules --style=compressed src/css:dist",
+    "sass:watch": "npx sass --no-source-map --load-path=node_modules --watch src/css:dist",
     "start": "npx npm-run-all -p serve sass:watch"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@thoughtbot/stylelint-config": "^2.0.0",
+    "normalize.css": "^8.0.1",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "sass": "^1.26.10",
