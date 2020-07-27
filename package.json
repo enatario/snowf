@@ -1,25 +1,26 @@
 {
-  "name": "11ty-starter",
+  "name": "11ty-base",
   "version": "1.0.0",
-  "description": "A bare-bones 11ty starter kit",
+  "description": "",
+  "author": "Elaina Natario",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "build": "npx npm-run-all -s clean eleventy sass:build",
-    "clean": "npx rimraf _site",
+    "clean": "npx rimraf dist",
     "eleventy": "npx eleventy",
-    "eleventy:serve": "npx eleventy --serve",
-    "sass": "npx sass src/sass:_site/css",
-    "sass:build": "npx sass --style=compressed src/sass:_site/css",
-    "sass:watch": "npx sass --watch src/sass:_site/css",
-    "start": "npx npm-run-all -p eleventy:serve sass:watch"
+    "serve": "npx @11ty/eleventy --serve",
+    "sass": "npx sass --no-source-map src/css:dist",
+    "sass:build": "npx sass  --no-source-map --style=compressed src/css:dist",
+    "sass:watch": "npx sass --no-source-map --watch src/css:dist",
+    "start": "npx npm-run-all -p serve sass:watch"
   },
-  "author": "Levi McGranahan",
-  "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "html-minifier": "^4.0.0",
+    "@thoughtbot/stylelint-config": "^2.0.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
-    "sass": "^1.26.2"
+    "sass": "^1.26.10",
+    "stylelint": "^13.6.1"
   }
 }

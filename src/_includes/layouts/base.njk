@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Webpage">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/css/styles.css">
-  {% block head %}{% endblock %}
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/app.css" as="style">
 </head>
 <body>
   <main>
-    {% block content %}
     {{ content | safe }}
-    {% endblock %}
   </main>
-  {% block scripts %}{% endblock %}
-  <script src="/js/site.js"></script>
 </body>
 </html>
