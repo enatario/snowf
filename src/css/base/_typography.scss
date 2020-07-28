@@ -26,7 +26,18 @@ h2 {
   font-size: var(--font-size-small);
 }
 
+small {
+  display: block;
+  font-style: italic;
+}
+
 [role="doc-subtitle"] {
   font-size: var(--font-size-large);
   margin-top: 0;
+
+  span {
+    color: var(--color-light-blue);
+    font-size: var(--font-size-base);
+    vertical-align: text-top;
+  }
 }
