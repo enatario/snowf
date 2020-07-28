@@ -32,12 +32,12 @@ small {
 }
 
 [role="doc-subtitle"] {
-  font-size: var(--font-size-large);
+  font-size: clamp(var(--font-size-base), 2.5vw, var(--font-size-large));
   margin-top: 0;
 
   span {
     color: var(--color-light-blue);
-    font-size: var(--font-size-base);
+    font-size: 75%;
     vertical-align: text-top;
   }
 }
