@@ -7,4 +7,4 @@
 * Run `npm start`
 
 ## Build and deploy
-* Run `npm build`
+* Run `npm run build`
