@@ -3,6 +3,7 @@
   --color-dark-blue: #334259;
   --color-beige: #f8f6f0;
   --color-beige-dark: #eee9d8;
+  --color-beige-darkest: #d7ceb4;
   --color-poppy: #eb5757;
   --color-poppy-dark: #c74040;
   --color-white: #ffffff;
@@ -11,6 +12,7 @@
   --color-text: var(--color-dark-blue);
   --color-link: var(--color-poppy);
   --color-link-hover: var(--color-poppy-dark);
+  --color-link-underline: var(--color-beige-darkest);
 
   --font-body: "Neuton", serif;
 
@@ -18,8 +20,11 @@
 
   --font-size-small: 1.2rem;
   --font-size-base: 1.5rem;
-  --font-size-large: 2.2rem;
+  --font-size-large: 2.5rem;
 
   --space-base: 1rem;
   --space-large: 4rem;
+
+  --transition-duration-base: 0.2s;
+  --transition-timing-base: ease-in-out;
 }

@@ -11,10 +11,14 @@ body {
 
 a {
   color: var(--color-link);
+  text-decoration-color: var(--color-link-underline);
+  transition-duration: var(--transition-duration-base);
+  transition-property: text-decoration-color, color;
+  transition-timing-function: var(--transition-timing-base);
 
   &:hover {
     color: var(--color-link-hover);
-    text-decoration: none;
+    text-decoration-color: var(--color-link-hover);
   }
 }
 
