@@ -4,7 +4,7 @@ html {
 
   &::after {
     bottom: 0;
-    box-shadow: inset 0 0 0 var(--space-base) var(--color-white), inset 0 0 0 calc(var(--space-base) + 2px) var(--color-beige-dark);
+    box-shadow: inset 0 0 0 var(--space-base) var(--color-background-box-shadow), inset 0 0 0 calc(var(--space-base) + 2px) var(--color-background-outline);
     content: "";
     display: block;
     left: 0;
