@@ -2,4 +2,18 @@
 layout: layouts/base.njk
 ---
 
-{% include "work.njk" %}
+{% set tags = collections | keys | except %}
+
+{%- for tag in tags -%}
+<section>
+  <h2>{{ tag | capitalize }}</h2>
+  <ul>
+    {%- for item in collections[tag] -%}
+    <li>
+      <a href="">{{ item.data.title }}</a>
+      <small>{% if item.data.note %}{{ item.data.note }}{% endif %}</small>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
