@@ -1,0 +1,16 @@
+---
+label: Work link
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: url
+  label: url
+- type: text
+  name: note
+  label: note
+- type: text
+  name: tags
+  label: tags
