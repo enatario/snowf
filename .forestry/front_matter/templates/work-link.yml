@@ -24,5 +24,13 @@ fields:
   default: []
   label: Work tags
   description: Tag your piece to categorize it. e.g. "books" "writing"
+- name: permalink
+  type: boolean
+  label: Permalink
+  hidden: true
+  default: false
+  showOnly:
+    field: permalink
+    value: false
 pages:
 - src/work/the-united-states-of-strange.md
