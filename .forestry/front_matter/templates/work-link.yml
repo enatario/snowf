@@ -4,13 +4,23 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Work title
+  description: The name of your book, blog post, etc.
+  config:
+    required: true
 - type: text
   name: url
-  label: url
+  label: Work URL
+  description: The url of your book, blog post, etc.
+  config:
+    required: true
 - type: text
   name: note
-  label: note
-- type: text
-  name: tags
-  label: tags
+  label: Work note
+  description: An extra note about the piece of work if needed. e.g. "Featured in
+    EW magazine". This is *not
+- name: tags
+  type: tag_list
+  default: []
+  label: Work tags
+  description: Tag your piece to categorize it. e.g. "books" "writing"
