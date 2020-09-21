@@ -33,4 +33,5 @@ fields:
     field: permalink
     value: false
 pages:
+- src/work/art-101.md
 - src/work/the-united-states-of-strange.md
