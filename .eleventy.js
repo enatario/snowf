@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
   eleventyConfig.addPassthroughCopy("./src/static");
+  eleventyConfig.addPassthroughCopy("./src/portal");
 
   eleventyConfig.addFilter("keys", obj => Object.keys(obj));
   eleventyConfig.addFilter("except", (arr=[]) => {
@@ -12,8 +13,7 @@ module.exports = function(eleventyConfig) {
   return {
     templateFormats: [
       "md",
-      "njk",
-      "html"
+      "njk"
     ],
 
     dir: {
