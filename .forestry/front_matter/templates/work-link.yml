@@ -19,11 +19,6 @@ fields:
   label: Work note
   description: An extra note about the piece of work if needed. e.g. "Featured in
     EW magazine". This is *not
-- name: tags
-  type: tag_list
-  default: []
-  label: Work tags
-  description: Tag your piece to categorize it. e.g. "books" "writing"
 - name: permalink
   type: boolean
   label: Permalink
@@ -32,6 +27,20 @@ fields:
   showOnly:
     field: permalink
     value: false
+- name: tags
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - books
+    - writing
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Work tags
 pages:
 - src/work/art-101.md
 - src/work/the-united-states-of-strange.md
