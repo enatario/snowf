@@ -24,3 +24,5 @@ fields:
   default: []
   label: Work tags
   description: Tag your piece to categorize it. e.g. "books" "writing"
+pages:
+- src/work/the-united-states-of-strange.md
