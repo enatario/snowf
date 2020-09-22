@@ -29,9 +29,9 @@ fields:
     value: false
 - name: tags
   type: select
-  default: []
+  default: ''
   config:
-    required: false
+    required: true
     options:
     - books
     - writing
