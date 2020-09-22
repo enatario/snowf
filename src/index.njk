@@ -11,7 +11,7 @@ layout: layouts/base.njk
     {%- for item in collections[tag] -%}
     <li>
       <a href="">{{ item.data.title }}</a>
-      <small>{% if item.data.note %}{{ item.data.note }}{% endif %}</small>
+      {% if item.data.note %}<small>{{ item.data.note }}</small>{% endif %}
     </li>
     {% endfor %}
   </ul>
