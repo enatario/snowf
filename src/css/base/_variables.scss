@@ -1,3 +1,9 @@
+$bourbon: (
+  "global-font-file-formats": ("woff2", "woff"),
+);
+
+$dir-font: "/static/fonts/";
+
 :root {
   --color-blue-lightest: #b3c1d6;
   --color-blue-light: #577298;

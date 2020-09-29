@@ -1,23 +1,17 @@
-@font-face {
+@include font-face("Neuton", $dir-font + "neuton-regular") {
   font-display: swap;
-  font-family: "Neuton";
   font-style: normal;
   font-weight: normal;
-  src: url("/static/fonts/neuton-regular.woff2") format("woff2");
 }
 
-@font-face {
+@include font-face("Neuton", $dir-font + "neuton-bold") {
   font-display: swap;
-  font-family: "Neuton";
   font-style: normal;
   font-weight: 600;
-  src: url("/static/fonts/neuton-bold.woff2") format("woff2");
 }
 
-@font-face {
+@include font-face("Neuton", $dir-font + "neuton-italic") {
   font-display: swap;
-  font-family: "Neuton";
   font-style: italic;
   font-weight: normal;
-  src: url("/static/fonts/neuton-italic.woff2") format("woff2");
 }
